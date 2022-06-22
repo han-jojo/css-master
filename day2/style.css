@@ -7,7 +7,7 @@ body {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(5, 150px);
-    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: repeat(7, 100px);
 }
 
 .header {
@@ -17,10 +17,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 10px 10px
 }
 
-.header span{
+.header span {
     color: white;
+}
+
+.header span:nth-child(2) {
+    position: relative;
+    right: 40px;
 }
 
 .content {
@@ -29,6 +35,19 @@ body {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 5;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content span {
+    padding-left: 5px;
+    position: relative;
+    top: 15px;
+}
+
+#big {
+    font-size: 100px;
+    font-weight: bold;
 }
 
 .nav {
@@ -41,4 +60,20 @@ body {
     background-color: #F14011;
     grid-column-start: 1;
     grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer span {
+    position: relative;
+    bottom: 25px;
+}
+
+#info {
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
 }
