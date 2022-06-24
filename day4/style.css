@@ -1,0 +1,85 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+}
+
+.grid {
+  color: white;
+  display: grid;
+  height: 35vh;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.item {
+  height: 35vh;
+  color: black;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item span:first-child {
+  padding: 15px 30px 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.item span:nth-child(2) {
+  padding-bottom: 25px;
+  font-size: 10px;
+}
+
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+
+.item:nth-child(even) {
+  background-color: #3498db;
+}
+
+#beige {
+  background-color: #bfbda7;
+}
+#orange {
+  background-color: #FE4714;
+}
+#grey {
+  background-color: #847E96;
+}
+#lime {
+  background-color: #D0FF71;
+}
+#scarlet {
+  background-color: #993333;
+}
+#sky {
+  background-color: #3AAAFA;
+}
+#green {
+  background-color: #41907A;
+}
+#pink {
+  background-color: #E3C4E5;
+}
