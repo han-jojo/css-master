@@ -21,7 +21,7 @@ const styles = () =>
     .pipe(
       autoprefixer({
         flexbox: true,
-        grid: "autoplace",
+        grid: "autoplace"
       })
     )
     .pipe(minify())
