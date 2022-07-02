@@ -1,0 +1,169 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  line-height: 1;
+  display: grid;
+  grid-template-columns: 6fr 0.5fr 3.5fr;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+section.content {
+  background-color: #ff7400;
+  width: 100%;
+  padding: 14px;
+  overflow-y: scroll;
+}
+section.content .item {
+  height: 150px;
+  display: grid;
+  grid-template-columns: 40px 7fr 3fr;
+  border: 2px solid #ff0400;
+  margin-bottom: -1px;
+}
+section.content .item div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff0400;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  padding: 10px;
+}
+section.content .item div:nth-child(2) {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  border: 2px solid #ff0400;
+  color: #ff0400;
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+section.content .item div:last-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+section.content .item div:last-child span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff0400;
+  border-bottom: 2px solid #ff0400;
+  text-align: center;
+  padding: 0 10px;
+}
+section.content .item div:last-child button {
+  justify-self: center;
+  align-self: center;
+  border: 0;
+  background-color: #ff0400;
+  color: #fff;
+  height: 70%;
+  width: 80%;
+  border-radius: 50px;
+}
+section.content .item:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+section.content .item:hover div:nth-child(2) {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+section.content .item:hover div:last-child span {
+  border-bottom: 2px solid #fff;
+}
+section.content .item:hover div:last-child button {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+header.title {
+  margin-left: 7px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 660px;
+}
+header.title div:first-child {
+  height: 100%;
+  background-color: #f0f;
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+header.title i {
+  display: flex;
+  align-self: center;
+  font-size: 100px;
+  line-height: 0;
+  z-index: 10;
+}
+header.title div:last-child {
+  height: 100%;
+  background-color: #1900ff;
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  font-size: 30px;
+  transform: rotate(180deg);
+}
+main.news {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-color: #ff0400;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr repeat(6, minmax(-webkit-min-content, 3fr));
+  grid-template-rows: 0.5fr repeat(6, minmax(min-content, 3fr));
+  padding: 20px;
+}
+main.news .news_item,
+main.news div.info {
+  display: flex;
+  border-bottom: 2px solid #000;
+}
+main.news div.info {
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+main.news div.info .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.news div.info .title h2 {
+  padding-left: 4px;
+}
+main.news .news_item {
+  flex-direction: column;
+}
+main.news .news_item h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+main.news .news_item span {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 6px;
+}
